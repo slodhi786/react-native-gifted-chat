@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   listStyle: {
-    flex: 1,
+    flex: 1, 
+    transform: [{rotate: '180deg',}]
   },
   scrollToBottomStyle: {
     opacity: 0.8,
@@ -347,7 +348,7 @@ export default class MessageContainer<
           keyExtractor={this.keyExtractor}
           enableEmptySections
           automaticallyAdjustContentInsets={false}
-          inverted={inverted}
+          inverted={false}
           data={this.props.messages}
           style={styles.listStyle}
           contentContainerStyle={styles.contentContainerStyle}
