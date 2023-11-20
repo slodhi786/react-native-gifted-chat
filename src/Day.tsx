@@ -60,7 +60,7 @@ export function Day<TMessage extends IMessage = IMessage>({
   }
 
   return (
-    <View style={[styles.container, containerStyle]}>
+    <View style={[styles.container, containerStyle, {transform: [{rotateY: '180deg'}]}]}>
       <View style={wrapperStyle}>
         <Text style={[styles.text, textStyle]}>
           {dayjs(currentMessage.createdAt)

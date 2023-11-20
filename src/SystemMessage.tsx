@@ -46,7 +46,7 @@ export function SystemMessage<TMessage extends IMessage = IMessage>({
   }
 
   return (
-    <View style={[styles.container, containerStyle]}>
+    <View style={[styles.container, containerStyle, {transform: [{scaleY: -1}]}]}>
       <View style={wrapperStyle}>
         <Text style={[styles.text, textStyle]}>{currentMessage.text}</Text>
       </View>

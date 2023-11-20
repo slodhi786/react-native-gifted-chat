@@ -348,7 +348,7 @@ export default class MessageContainer<
           keyExtractor={this.keyExtractor}
           enableEmptySections
           automaticallyAdjustContentInsets={false}
-          inverted={false}
+          inverted={inverted}
           data={this.props.messages}
           style={styles.listStyle}
           contentContainerStyle={styles.contentContainerStyle}

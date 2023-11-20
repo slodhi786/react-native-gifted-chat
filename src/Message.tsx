@@ -195,7 +195,7 @@ export default class Message<
                 styles[position].container,
                 { marginBottom: sameUser ? 2 : 10 },
                 !this.props.inverted && { marginBottom: 2 },
-                containerStyle && containerStyle[position],
+                containerStyle && containerStyle[position],{transform: [{rotateY: '180deg'}]}
               ]}
             >
               {this.props.position === 'left' ? this.renderAvatar() : null}
